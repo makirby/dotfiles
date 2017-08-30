@@ -23,6 +23,9 @@ export HISTCONTROL='ignoreboth';
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
+# SDK ANDROID
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk;
+
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
 

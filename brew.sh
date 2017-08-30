@@ -33,13 +33,6 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-<<<<<<< HEAD
-# Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-=======
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -47,15 +40,14 @@ brew install gnupg
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
-brew install screen
-brew install homebrew/php/php56 --with-gmp
->>>>>>> 99996f3f01deb49b77b8549a8691bb9cfec86fb0
+#brew install screen
+# brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+#brew tap bramstein/webfonttools
+#brew install sfnt2woff
+#brew install sfnt2woff-zopfli
+#brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -99,6 +91,21 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+# React native stuff
+brew install node
+brew install yarn
+brew install watchman
+
+
+# Android build specific
+brew tap caskroom/cask
+brew cask install java
+brew install ant
+brew install maven
+brew install gradle
+brew cask install android-sdk
+brew cask install android-ndk
 
 # Remove outdated versions from the cellar.
 brew cleanup
