@@ -22,7 +22,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew install bash-completion2
+# brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
@@ -92,11 +92,22 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+brew install vtop
+
+# Other Apps
+brew cask install macdown
+brew cask install dash
+brew cask install alfred
+
+# Dev tooling
+brew cask install visual-studio-code
+brew cask install react-native-debugger
+
 # React native stuff
 brew install node
 brew install yarn
 brew install watchman
-
+brew cask install fastlane
 
 # Android build specific
 brew tap caskroom/cask
@@ -106,6 +117,9 @@ brew install maven
 brew install gradle
 brew cask install android-sdk
 brew cask install android-ndk
+
+# Xamarin / c# stuff
+brew cask install visual-studio
 
 # Remove outdated versions from the cellar.
 brew cleanup
