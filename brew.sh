@@ -120,6 +120,7 @@ brew cask install android-ndk
 
 # Xamarin / c# stuff
 brew cask install visual-studio
+brew cask install xamarin-ios
 
 # Remove outdated versions from the cellar.
 brew cleanup
